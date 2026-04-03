@@ -12,6 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
         val recyclerView = findViewById<RecyclerView>(R.id.newsRecycler)
+        val adapter = NewsAdapter(emptyList())
+        recyclerView.adapter = adapter
+    }
+    private fun loadData(){
 
     }
 }
